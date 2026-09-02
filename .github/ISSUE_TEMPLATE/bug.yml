@@ -1,0 +1,48 @@
+name: Bug report
+description: Report reproducible behavior that differs from the documented contract.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, personal data, production records, or vulnerability details.
+        Security reports follow SECURITY.md.
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: What happened, including the smallest safe reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What contract, documentation, or prior behavior should apply?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Version, commit, runtime, operating system, browser, and deployment tier.
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - Blocks work or causes data/security risk
+        - Major functionality unavailable
+        - Limited degradation with workaround
+        - Minor or cosmetic
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe evidence
+      description: Sanitized logs, screenshots, or links. Remove sensitive data first.

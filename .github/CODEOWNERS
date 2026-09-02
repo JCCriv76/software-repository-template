@@ -1,0 +1,9 @@
+# Replace these placeholders during bootstrap. More-specific paths may be added when real teams exist.
+* @YOUR-ORG/YOUR-TEAM
+
+# Changes to repository controls require the owning team's review.
+/.github/ @YOUR-ORG/YOUR-TEAM
+/AGENTS.md @YOUR-ORG/YOUR-TEAM
+/SECURITY.md @YOUR-ORG/YOUR-TEAM
+/repository-profile.json @YOUR-ORG/YOUR-TEAM
+/scripts/ @YOUR-ORG/YOUR-TEAM

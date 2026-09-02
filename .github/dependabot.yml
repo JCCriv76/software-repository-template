@@ -1,0 +1,23 @@
+version: 2
+
+updates:
+  # Keep the baseline GitHub Actions references current. Dependabot preserves
+  # full-SHA pins while updating the human-readable release comment.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: America/New_York
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "ci"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+
+  # Add exactly one block for each package ecosystem selected by the project.
+  # Do not set target-branch unless repository-profile.json records a reviewed
+  # non-trunk branch model; omitting it safely follows the default branch.

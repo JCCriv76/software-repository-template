@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "template": {
+    "isTemplate": true,
+    "repositoryName": "software-repository-template",
+    "version": "0.1.0"
+  },
+  "project": {
+    "name": "software-repository-template",
+    "description": "A hardened, stack-neutral starting point for organization software repositories.",
+    "type": "template",
+    "lifecycle": "template",
+    "visibility": "private",
+    "riskTier": "baseline",
+    "dataClassification": "internal"
+  },
+  "ownership": {
+    "primaryTeam": "YOUR-ORG/YOUR-TEAM",
+    "backupTeam": "",
+    "securityContact": "security@example.invalid",
+    "supportUrl": "https://example.invalid/support"
+  },
+  "legal": {
+    "license": "unselected",
+    "licenseHolder": "YOUR-ORGANIZATION"
+  },
+  "stack": {
+    "profile": "none",
+    "languages": [],
+    "packageManagers": [],
+    "deployable": false,
+    "producesArtifacts": false
+  },
+  "delivery": {
+    "branchModel": "trunk-based",
+    "releaseModel": "none",
+    "deploymentTarget": "none"
+  },
+  "verification": {
+    "commands": []
+  }
+}

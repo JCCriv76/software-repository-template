@@ -1,0 +1,36 @@
+name: Engineering task
+description: Track maintenance, documentation, security, or technical work.
+title: "[Task]: "
+labels:
+  - task
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this work needed now?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: State what is included and explicitly excluded.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification plan
+      description: Commands, probes, or evidence that will demonstrate completion.
+    validations:
+      required: true

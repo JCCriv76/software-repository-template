@@ -1,0 +1,47 @@
+# Secrets and local environment. Example files must be explicitly unignored.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.local
+
+# Logs, coverage, temporary files, and build products
+*.log
+.cache/
+.coverage
+coverage/
+dist/
+build/
+tmp/
+temp/
+
+# Node.js profile
+node_modules/
+.npm/
+.pnpm-store/
+
+# Python profile
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.egg-info/
+
+# Java / Spring profile
+.gradle/
+target/
+out/
